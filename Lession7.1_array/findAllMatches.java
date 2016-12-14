@@ -6,7 +6,7 @@ public class ListOfPictures
 {
     public static void main(String[] args)
     {
-        ArrayList<Picture> gallery = new ArrayList<Picture>();
+        ArrayList<Picture> gallery = new ArrayList<Picture>(); 
         gallery.add(new Picture("degas1.jpg"));
         gallery.add(new Picture("gaugin1.jpg"));
         gallery.add(new Picture("monet1.jpg"));
@@ -15,7 +15,7 @@ public class ListOfPictures
 
         ArrayList<Picture> matches = new ArrayList<Picture>();
         for (Picture pic: gallery){
-            if (pic.getHeight()> pic.getWidth()){
+            if (pic.getHeight()> pic.getWidth()){   // Portrait orientation
                 matches.add(pic);
             }
         }

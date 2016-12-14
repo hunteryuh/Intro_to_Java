@@ -15,7 +15,7 @@ public class ListOfPictures
 
         ArrayList<Picture> matches = new ArrayList<Picture>();
         for (Picture pic: gallery){
-            if (pic.getHeight()> pic.getWidth()){   // Portrait orientation
+            if (pic.getHeight()> pic.getWidth()){   // Portrait orientation, opposite to landscape
                 matches.add(pic);
             }
         }

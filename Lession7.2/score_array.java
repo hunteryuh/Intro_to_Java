@@ -32,7 +32,7 @@ public class HomeworkScores
         // Sum all the scores that have been entered so far and
         // return the result.
         double sum = 0;
-        for(double value:scores){
+        for(double value:scores){   // or for (int i = 0; i< currentSize; i++){
             sum+= value;
         }
         return sum;

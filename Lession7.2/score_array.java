@@ -1,4 +1,6 @@
-// BlueJ project: lesson7/scores1
+// BlueJ project: lesson7/scores2
+
+// Implement the sumScores Method.
 
 import java.util.Arrays;
 import java.util.Scanner;
@@ -20,17 +22,28 @@ public class HomeworkScores
         currentSize = 0;
     }
 
-    public void readScores(Scanner userInput)
+    /**
+     * Calculates the Sum of all the scores entered.
+     * @return the sum of all the scores in scores.
+     */
+    public double sumScores()
     {
         // YOUR CODE HERE
-        // Read (userInput) scores between 0 and 100 until a non number is entered.
-        // Use the scanner passed in in the argument userInput.
-        // Save each score that is read in the partially filled scores array.
-        // Make sure not to lose track of how filled the array is.
-        System.out.println("Enter a number, q to quit: ");
-        while(userInput.hasNextDouble()){
-            double value = userInput.nextDouble();
-            scores[currentSize] = value;
+        // Sum all the scores that have been entered so far and
+        // return the result.
+        double sum = 0;
+        for(double value:scores){
+            sum+= value;
+        }
+        return sum;
+    }
+
+    public void readScores(Scanner userInput)
+    {
+        while (userInput.hasNextDouble())
+        {
+            double nextScore = userInput.nextDouble();
+            scores[currentSize] = nextScore;
             currentSize++;
         }
     }

@@ -43,8 +43,8 @@ public class QuestionDemo
         // Check whether the response was correct
         // If so, print "true" and return 1
         // Otherwise, print "false" and return 0
-        if(q.checkAnswer(response)){
-            System.out.println("true");
+        if(q.checkAnswer(response)){   // boolean outcome = q.checkAnswer(response);
+            System.out.println("true");  // or System.out.println(outcome);
             return 1;
         }else {
             System.out.println("false");

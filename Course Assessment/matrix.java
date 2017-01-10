@@ -29,5 +29,8 @@ public class Matrix
         // TODO: get the number of columns
         return matrix[0].length;
     }
-
+    public int numberOfRows()
+    {
+        return matrix.length;
+    }
 }

@@ -33,4 +33,23 @@ public class Matrix
     {
         return matrix.length;
     }
+    /**
+     * Gets the sum of all the even numbers in the matrix
+     * @return the sum of all the even numbers
+     */
+    public int sumOfEvenNumbers()
+    {
+         // TODO: Return the sum of all the numbers which are even
+         int sum = 0;
+         for (int i =0; i< matrix.length; i++){
+             for (int j = 0; j< matrix[0].length; j++){
+                 if(matrix[i][j]%2==0){
+                     sum+= matrix[i][j];
+                 }
+             }
+         }
+         return sum;
+    }
+    
+    
 }

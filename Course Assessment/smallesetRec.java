@@ -40,7 +40,7 @@ public class RectangleList
         } else{
             Rectangle smallestRec = list.get(0);
             for (int i = 1; i< list.size(); i++){
-                if ( list.get(i).getWidth()* list.get(i).getHeight() < smallest.getWidth()* smallest.getHeight()){
+                if ( list.get(i).getWidth()* list.get(i).getHeight() < smallestRec.getWidth()* smallestRec.getHeight()){
                     smallestRec = list.get(i);
                 }
                 
@@ -51,4 +51,4 @@ public class RectangleList
     }
 
 }
-// to be done
+// done on 1/10/2017

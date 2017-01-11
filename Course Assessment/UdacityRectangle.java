@@ -1,3 +1,4 @@
+//works with Rectangle.java
 // The Rectangle in the graphics package we have been using in  
 // this course is limited because it cannot calculate its area.
 //
